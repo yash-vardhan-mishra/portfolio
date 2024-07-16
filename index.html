@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+  <title>Yash Vardhan Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/ce509fccd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo-red.svg" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Mobile Application Developer</p>
+        <h1>Hi, I'm <span>Yash</span><br />from India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/photo.jpeg" alt="profile photo" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            An enthusiastic mobile application developer with extensive expertise in React Native and native iOS
+            development, also proficient in web development.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span> <br />Web App Development</li>
+              <li>
+                <span>App Development</span> <br />Building iOS/Android apps
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>April 2021 - July 2024</span> <br />Visit Health Private
+                Limited
+              </li>
+              <li>
+                <span>May 2019 - October 2019</span> <br />Quillhash
+                Technologies
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2025</span> <br />Masters in Information Technology from The University of Waikato, NZ
+              </li>
+              <li>
+                <span>2022</span> <br />Post Graduate Diploma in Software Development from IIIT Bangalore
+              </li>
+              <li>
+                <span>2016</span> <br />B.Tech. in Electronics & Communication Engineering from JUET Guna
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            Discover the remarkable performance of exceptionally lightweight and fast websites, meticulously crafted to
+            scale seamlessly across any device screen. These websites are built using the latest and best practices in
+            web development, ensuring optimal speed, responsiveness, and user experience on all platforms.
+          </p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+          <i class="fa-brands fa-apple"></i>
+          <h2>iOS App Development</h2>
+          <p>
+            Experience the magic of buttery smooth iOS applications that are incredibly user-friendly and seamlessly
+            adhere to Apple’s design guidelines. These applications are designed for an intuitive and enjoyable user
+            experience, ensuring high performance and consistency with the elegant and familiar aesthetics of the Apple
+            ecosystem.
+          </p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+          <i class="fa-brands fa-android"></i>
+          <h2>Android App Development</h2>
+          <p>
+            Enjoy the power of cutting-edge Android applications, crafted with the latest techniques to ensure smooth
+            performance on all devices. Whether you use a Huawei, Poco, Samsung, or Google Pixel, or any other OEM,
+            these applications are designed to provide a seamless and responsive experience.
+          </p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --portfolio-- -->
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.webp" alt="">
+          <div class="layer">
+            <h3>Zeptagram</h3>
+            <p>Music Marketplace</p>
+            <a target="_blank" href="https://apps.apple.com/se/app/zeptagram/id1481741523"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.webp" alt="">
+          <div class="layer">
+            <h3>Teleconsultation Application</h3>
+            <p>An application for doctors</p>
+            <a target="_blank" href="https://apps.apple.com/in/app/visit-partner/id1186831034"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.webp" alt="">
+          <div class="layer">
+            <h3>Health Benefits Platform</h3>
+            <p>India's fastest and best free doctor consult and healthcare app</p>
+            <a target="_blank" href="https://apps.apple.com/in/app/visit-health-benefits-platform/id1169969848"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="" class="btn">See more</a> -->
+    </div>
+  </div>
+
+  <!-- --contact-- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>yash-vardhan@hotmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>+64272593463</p>
+          <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/yash-vardhan-mishra/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/yash.vardhan.m/">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a target="_blank" href="https://github.com/yash-vardhan-mishra/">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </div>
+          <a href="images/Yash_Vardhan_Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message">
+              </textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>
+      <!-- Copyright © Yash.  -->
+      Made with <i class="fa-solid fa-heart"></i> by Yash Vardhan
+    </p>
+  </div>
+
+  <script>
+    const tabLinks = document.getElementsByClassName("tab-links");
+    const tabContents = document.getElementsByClassName("tab-contents");
+    const opentab = (tabname) => {
+      for (tablink of tabLinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabContents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    };
+  </script>
+  <script>
+    const sidemenu = document.getElementById("sidemenu");
+    function openMenu() {
+      sidemenu.style.right = "0";
+    }
+    function closeMenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyYWawNWOkaciNCRIyOgsekIpoc6B4F04vUPNXQUH0_QlfyvHC834q0mBRVlHKj7bq_Ng/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(() => {
+            msg.innerHTML = ''
+          }, 2000);
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
