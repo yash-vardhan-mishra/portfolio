@@ -374,6 +374,10 @@ form .btn2 {
   color: #ff004f;
 }
 
+.email {
+  color: #714FFF;
+}
+
 /* ------ css for small screens ------- */
 nav .fa-solid {
   display: none;
